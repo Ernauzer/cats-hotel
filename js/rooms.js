@@ -3,7 +3,7 @@ const roomsFilterBtnConteiner = document.querySelector(
   ".rooms_body_filter_btn_conteiner"
 );
 
-fetch("../../src/js/rooms.json")
+fetch("./json/rooms.json")
   .then((res) => res.json())
   .then((data) => {
     let roomsArray = data;
