@@ -1,0 +1,150 @@
+[
+    {
+        "images": {
+            "320": "./img/rooms/room1.jpg",
+            "768": "./img/rooms/room1_768.jpg",
+            "1366": "./img/rooms/room1_1366.jpg"
+        },
+        "name": "Эконом",
+        "sizes": "90х70х180 см",
+        "area": "0,63 м2",
+        "roomEquipment": [
+            {
+                "Без оснащения": "./img/decoration/no-enq.svg"
+            }
+        ],
+        "priceDay": "100"
+    },
+    {
+        "images": {
+            "320": "./img/rooms/room2.jpg",
+            "768": "./img/rooms/room2_768.jpg",
+            "1366": "./img/rooms/room2_1366.jpg"
+        },
+        "name": "Эконом плюс",
+        "sizes": "90х100х180 см",
+        "area": "0,90 м2",
+        "roomEquipment": [
+            {
+                "Лежак": "./img/decoration/misk.svg"
+            },
+            {
+                "Когтеточка": "./img/decoration/kognet.svg"
+            }
+        ],
+        "priceDay": "200"
+    },
+    {
+        "images": {
+            "320": "./img/rooms/room6.jpg",
+            "768": "./img/rooms/room6_768.jpg",
+            "1366": "./img/rooms/room6_1366.jpg"
+        },
+        "name": "Эконом плюс",
+        "sizes": "90х70х180 см",
+        "area": "0,90 м2",
+        "roomEquipment": [
+            {
+                "Лежак": "./img/decoration/misk.svg"
+            },
+            {
+                "Когтеточка": "./img/decoration/kognet.svg"
+            }
+        ],
+        "priceDay": "200"
+    },
+    {
+        "images": {
+            "320": "./img/rooms/room3.jpg",
+            "768": "./img/rooms/room3_768.jpg",
+            "1366": "./img/rooms/room3_1366.jpg"
+        },
+        "name": "Комфорт",
+        "sizes": "100х125х180 см",
+        "area": "1,13 м2",
+        "roomEquipment": [
+            {
+                "Лежак": "./img/decoration/misk.svg"
+            },
+            {
+                "Когтеточка": "./img/decoration/kognet.svg"
+            },
+            {
+                "Игровой Комплекс": "./img/decoration/ball.svg"
+            }
+        ],
+        "priceDay": "250"
+    },
+    {
+        "images": {
+            "320": "./img/rooms/room4.jpg",
+            "768": "./img/rooms/room4_768.jpg",
+            "1366": "./img/rooms/room4_1366.jpg"
+        },
+        "name": "Сьют",
+        "sizes": "125х125х180 см",
+        "area": "1,56 м2",
+        "roomEquipment": [
+            {
+                "Лежак": "./img/decoration/misk.svg"
+            },
+            {
+                "Когтеточка": "./img/decoration/kognet.svg"
+            },
+            {
+                "Игровой Комплекс": "./img/decoration/ball.svg"
+            }
+        ],
+        "priceDay": "350"
+    },
+    {
+        "images": {
+            "320": "./img/rooms/room5.jpg",
+            "768": "./img/rooms/room5_768.jpg",
+            "1366": "./img/rooms/room5_1366.jpg"
+        },
+        "name": "Люкс",
+        "sizes": "160х160х180 см",
+        "area": "2,56 м2",
+        "roomEquipment": [
+            {
+                "Лежак": "./img/decoration/misk.svg"
+            },
+            {
+                "Когтеточка": "./img/decoration/kognet.svg"
+            },
+            {
+                "Игровой Комплекс": "./img/decoration/ball.svg"
+            },
+            {
+                "Домик": "./img/decoration/home.svg"
+            }
+        ],
+        "priceDay": "500"
+    },
+    {
+        "images": {
+            "320": "./img/rooms/room7.jpg",
+            "768": "./img/rooms/room7_768.jpg",
+            "1366": "./img/rooms/room7_1366.jpg"
+        },
+        "name": "Супер-Люкc",
+        "sizes": "180х160х180 см",
+        "area": "2,88 м2",
+        "roomEquipment": [
+            {
+                "Лежак": "./img/decoration/misk.svg"
+            },
+            {
+                "Когтеточка": "./img/decoration/kognet.svg"
+            },
+            {
+                "Игровой Комплекс": "./img/decoration/ball.svg"
+            },
+            {
+                "Домик": "./img/decoration/home.svg"
+            }
+        ],
+        "priceDay": "650"
+    }
+]

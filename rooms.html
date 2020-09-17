@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/lib.css" />
+    <title>Hotel Cats</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+          <div class="conteiner_logo">
+            <a href="index.html#" class="link header_logo_link">
+              <img src="./img/logo.svg" alt="LOGO" class="logo">
+            </a>
+          </div>
+          <div class="conteiner_hamburger">
+            <a href="" class="link hamburger_link">
+              <span class="hamburger_line"></span>
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="list nav_list">
+              <li class="list_item nav_list_item">
+                <a href="index.html#" class="link list_item_link nav_links">Почему мы?</a>
+              </li>
+              <li class="list_item nav_list_item">
+                <a href="rooms.html" class="link list_item_link nav_links">Номера</a>
+              </li>
+              <li class="list_item nav_list_item">
+                <a href="index.html#" class="link list_item_link nav_links">Отзывы</a>
+              </li>
+              <li class="list_item nav_list_item nav_list_last nav_list_contact">
+                <a href="index.html#" class="link list_item_link nav_links">Контакты</a>
+              </li>
+              <li class="list_item nav_list_item nav_list_last">
+                <a href="index.html#" class="link list_item_link nav_links">Как нас найти</a>
+              </li>
+              <li class="list_item nav_list_item nav_list_tel">
+                <a href="tel:+8 800 333 55 99" class="link nav_links">8 (800) 333-55-99</a>
+              </li>
+              <ul class="list nav_social_list">
+                <a href="#" class="link social link_fb">
+                  <img class="img_social" src="./img/social/facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="link social link_ista">
+                  <img class="img_social" src="./img/social/insta.svg" alt="instagram">
+                </a>
+                <a href="#" class="link social link_vk">
+                  <img class="img_social" src="./img/social/vk.svg" alt="vk">
+                </a>
+              </ul>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="contact_info_content rooms_wrapper">
+            <div class="rooms_header">
+                <div class="rooms_header_title_block">
+                    <h2 class="title rooms_header_title">Наши номера</h2>
+                </div>
+                <div class="rooms_header_btn">
+                    <a class="rooms_btn_default rooms_btn_filter" type="button">Фильтры</a>
+                    <!-- <select class="rooms_btn_default rooms_btn_select" name="sort" id="sort">
+                            <option class="rooms_select_option" value="">По площади</option>
+                            <option class="rooms_select_option" value="">По площади</option>
+                            <option class="rooms_select_option" value="">По цене</option>
+                            <option class="rooms_select_option" value="">По цене</option>
+                        </select> -->
+                </div>
+            </div>
+            <div class="rooms_body">
+                <div class="filter_wrapper">
+                    <div class="rooms_body_filter">
+                        <a href="#" class="link clouse_btn"></a>
+                        <div class="rooms_total_filter">
+                            <span class="filter_title">Цена за сутки, ₽</span>
+                            <div class="rooms_filter_total_block">
+                                <div class="filter_total_wrapper">
+                                    <input class="total_filter total_filter_before" type="text" name="in" value="100">
+                                </div>
+                                <div class="filter_total_wrapper">
+                                    <input class="total_filter total_filter_after" type="text" name="to" value="600">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rooms_filter_conteiner rooms_area_filters">
+                            <span class="filter_title">Площадь</span>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="sm">
+                                <label for="sm">0,63 м2</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="md">
+                                <label for="md">0,90 м2</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="mdd">
+                                <label for="mdd">1,13 м2</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="hd">
+                                <label for="hd">1,56 м2</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="hdd">
+                                <label for="hdd">2,56 м2</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="max">
+                                <label for="max">2,88 м2</label>
+                            </div>
+                        </div>
+                        <div class="rooms_filter_conteiner filter_last_box_margin rooms_equipment_filter">
+                            <span class="filter_title">Оснащение номера</span>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="vacant">
+                                <label for="vacant">Пустой номер</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="sunbed">
+                                <label for="sunbed">Лежак</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="claw-point">
+                                <label for="claw-point">Когтеточка</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="game_complex">
+                                <label for="game_complex">Игровой-комплекс</label>
+                            </div>
+                            <div class="filter_area_box">
+                                <input class="rooms_filter_checker" checked type="checkbox" name="" id="home">
+                                <label for="home">Домик</label>
+                            </div>
+                        </div>
+                        <div class="rooms_filter_conteiner rooms_body_filter_btn_conteiner">
+                            <button id="btn_sort_push" class="rooms_btn_default btn_custom_rooms filter_btn btn_custom_rooms_active btn_rooms_sort_push" type="button">Подобрать</button>
+                            <button id="btn_sort_cansel" class="rooms_btn_default btn_custom_rooms filter_btn btn_rooms_sort_cansel" type="button">Сбросить фильтр</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms_body_wrapper" id="rooms_body_conteiner">
+
+                </div>
+            </div>
+        </main>
+
+        <section class="promo_conteiner">
+            <div class="main_info_conteiner promo">
+                <h4 class="title promo_title">
+                    <span class="promo_title_span">Каждый 7-й день</span>
+                    <span class="promo_title_span promo_title_free">бесплатно!</span> 
+                </h4>
+                <p class="paragraph promo_paragraph">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+                <button class="default_button promo_btn btn_pop-up" type="button">Забронировать</button>
+            </div>
+        </section>
+        <section class="contact_info_block">
+            <div class="info_conteiner_sz contact_info_content">
+              <h2 class="title contact_info_block_title">Как нас найти</h2>
+              <div class="contact_info">
+                <div class="info_block">
+                  <h4 class="title info_title">Адрес</h4>
+                  <span class="info address address_city">Санкт-Петербург,</span>
+                  <span class="info address">ул Большая Конюшенная, д 19</span>
+                </div>
+                <div class="info_block">
+                  <h4 class="title info_title">Режим работы</h4>
+                  <span class="info work_days">
+                    Ежедневно, с 9:00 до 20:00
+                  </span>
+                </div>
+                <div class="info_block">
+                  <h4 class="title info_title">Телефон</h4>
+                  <a href="tel:+8 800 333 55 99" class="link info info_tel">8 (800) 333-55-99</a>
+                </div>
+                <div class="info_block">
+                  <h4 class="title info_title">E-mail</h4>
+                  <a href="mailto:info@cat-hotel.ru" class="link info info_email">info@cat-hotel.ru</a>
+                </div>
+                <div class="info_block social_block">
+                  <h4 class="title info_title">Социальные сети</h4>
+                  <a href="#" class="link social link_fb">
+                    <img class="img_social" src="./img/social/facebook.svg" alt="facebook">
+                  </a>
+                  <a href="#" class="link social link_ista">
+                    <img class="img_social" src="./img/social/insta.svg" alt="instagram">
+                  </a>
+                  <a href="#" class="link social link_vk">
+                    <img class="img_social" src="./img/social/vk.svg" alt="vk">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="info_conteiner_sz contact_info_map">
+              <iframe class="google_maps_"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3053675129804!2d30.32296935800971!3d59.938874832494015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x7ccfa24468b9fb7!2sSavina%20Gallery!5e0!3m2!1sru!2sua!4v1589668343942!5m2!1sru!2sua"
+                width="0" height="0" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </section>
+        <footer class="footer">
+            <div class="footer_content footer_nav_conteiner">
+              <img src="./img/logo.svg" alt="" class="logo">
+              <ul class="footer_list">
+                <li class="list_item">
+                  <a href="index.html#" class="foot_link link nav_links">Почему мы?</a>
+                </li>
+                <li class="list_item">
+                  <a href="index.html#" class="foot_link link nav_links">Отзывы</a>
+                </li>
+                <li class="list_item">
+                  <a href="rooms.html" class="foot_link link nav_links">Номера</a>
+                </li>
+                <li class="list_item">
+                  <a href="index.html#" class="foot_link link nav_links">Как нас найти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_content footer_copyright">
+              <span class="footer_content_copy copyright">&#169 2019 Все права защищены</span>
+              <a href="#" class="footer_content_copy link privat_policy">Политика конфиденциальности</a>
+            </div>
+          </footer>
+        <div class="pop-up_wrapper">
+            <div class="pop-up_conteiner">
+                <a href="#" class="link clouse_btn"></a>
+                <div class="pop-up_header">
+                    <h2 class="title pop-up_title">Забронировать номер</h2>
+                </div>
+                <div class="pop-up_main">
+                    <input type="text" name="" id="user_name" placeholder="Ваше имя" class="pop-up_input">
+                    <input type="text" name="" id="uset_pit_name" placeholder="Имя питомца" class="pop-up_input">
+                    <input type="tel" name="" id="uset_tel" placeholder="Телефон" class="pop-up_input">
+                    <input type="email" name="" id="user_email" placeholder="E-mail" class="pop-up_input">
+                    <div class="pop-up_main_data">
+                        <span class="pop-up_data_title">Дата заезда</span>
+                        <div class="pop_up_data">
+                            <span>c</span>
+                            <input type="date" name="data_" id="data_on" value="2020-01-26" class="pop-up_data_custom">
+                            <span>по</span>
+                            <input type="date" name="data_" id="data_to" value="2020-02-26" class="pop-up_data_custom">
+                        </div>
+                        <button type="submit" class="default_button button_col pop-up_submit_btn btn_submit_form">Отправить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module"src="./js/rooms.js"></script>
+</body>
+
+</html>
