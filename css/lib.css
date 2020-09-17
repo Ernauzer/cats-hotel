@@ -1163,13 +1163,48 @@ body,
       margin-right: 10px;
       margin-left: 10px; }
       .rooms_body_wrapper .rooms .rooms_logo {
-        width: 324px;
+        max-width: 324px;
         height: 185px;
         -o-object-fit: cover;
         object-fit: cover; }
       .rooms_body_wrapper .rooms .button_col {
         max-width: 274px;
         margin: 0 auto; } }
+
+@media (min-width: 1366px) {
+  .rooms_header_title_block .rooms_header_title {
+    margin-bottom: 0; }
+  .rooms_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; }
+  .filter_wrapper {
+    display: block;
+    flex-basis: 25%;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+    background: transparent;
+    position: static; }
+  .rooms_body {
+    display: flex; }
+  .rooms_body_filter {
+    box-shadow: none;
+    background-color: transparent;
+    position: static;
+    transform: translateX(0); }
+  .rooms_body_wrapper {
+    flex-basis: 80%; }
+    .rooms_body_wrapper .rooms {
+      max-width: 270px; }
+  .fil_title_first {
+    margin-top: 0; }
+  .btn_rooms_sort_push, .rooms_header_btn .rooms_btn_filter, .clouse_btn {
+    display: none; }
+  .btn_custom_rooms {
+    max-width: 185px;
+    padding-right: 20px;
+    padding-left: 20px; } }
 
 .pop-up_wrapper {
   padding-top: 70px;

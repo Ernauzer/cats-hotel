@@ -1,9 +1,9 @@
-﻿const roomConteiner = document.querySelector("#rooms_body_conteiner");
+const roomConteiner = document.querySelector("#rooms_body_conteiner");
 const roomsFilterBtnConteiner = document.querySelector(
   ".rooms_body_filter_btn_conteiner"
 );
 
-fetch("./json/rooms.json")
+fetch("../../src/js/rooms.json")
   .then((res) => res.json())
   .then((data) => {
     let roomsArray = data;
