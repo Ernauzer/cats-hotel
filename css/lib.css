@@ -155,7 +155,7 @@ body,
 @media (min-width: 768px) {
   .header {
     min-height: 76px;
-    width: 90%; }
+    width: 85%; }
   .nav {
     display: block;
     padding: 0;
@@ -386,14 +386,14 @@ body,
 
 @media (min-width: 1366px) {
   .atvanages_conteiner {
-    max-width: 90%;
+    max-width: 85%;
     justify-content: space-between; }
   .conteiner_padding {
     padding-top: 140px; }
   .atvanages_block {
     margin-right: 20px;
     margin-left: 0;
-    max-width: 370px;
+    max-width: 360px;
     padding: 30px; }
     .atvanages_block img {
       width: 91px;
@@ -776,7 +776,7 @@ body,
   .contact_info_block .contact_info_content {
     padding-top: 70px;
     padding-bottom: 70px;
-    padding-left: 5%;
+    padding-left: 7%;
     flex-basis: 41.5%; }
   .contact_info_block .contact_info_map {
     flex: 2; }
@@ -873,10 +873,7 @@ body,
   .footer .footer_content {
     padding: 12px 0; }
   .footer .footer_copyright {
-    padding: 17px 0; }
-  .footer .footer_nav_conteiner,
-  .footer .footer_copyright {
-    max-width: 90%; } }
+    padding: 17px 0; } }
 
 .promo_conteiner {
   margin-top: 60px;
@@ -921,7 +918,7 @@ body,
 
 @media (min-width: 768px) {
   .promo_conteiner {
-    max-width: 90%;
+    max-width: 85%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 60px;
@@ -980,6 +977,36 @@ body,
   line-height: 33px;
   margin-bottom: 40px; }
 
+.equipment_img_div {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: relative; }
+  .equipment_img_div .equipment_content {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14.4px;
+    max-width: 100px;
+    padding: 10px;
+    background-color: #ffff;
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+    border: 1px solid #FAC663;
+    border-radius: 4px;
+    position: absolute;
+    top: -36px;
+    left: 0;
+    z-index: 10; }
+    .equipment_img_div .equipment_content span {
+      display: block;
+      width: 16px;
+      height: 10px;
+      position: absolute;
+      top: calc(100% - 2px);
+      background-image: url(../img/decoration/vector.svg);
+      background-repeat: no-repeat; }
+
 .rooms_header_btn {
   display: flex;
   justify-content: space-between; }
@@ -995,6 +1022,13 @@ body,
       background: url(../img/decoration/filter.svg) no-repeat center/cover;
       width: 12px;
       height: 15px; }
+
+.room_price {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1A212f;
+  display: inline-block;
+  margin-left: 5px; }
 
 .rooms_btn_default {
   padding: 0;
@@ -1077,16 +1111,17 @@ body,
       position: absolute;
       left: 10px;
       top: 50%;
-      transform: translateY(-55%);
+      transform: translateY(-60%);
       display: block; }
     .rooms_filter_total_block .filter_total_wrapper:nth-child(2):before {
       content: "до";
       position: absolute;
       left: 10px;
       top: 50%;
-      transform: translateY(-55%);
+      transform: translateY(-60%);
       display: block; }
   .rooms_filter_total_block .total_filter {
+    border: 1px solid #E1E1E1;
     font-size: 14px;
     padding: 8px 28px 8px 30px;
     max-width: 100px;
@@ -1138,11 +1173,10 @@ body,
   max-width: 100%; }
 
 .equipment_img {
+  cursor: pointer;
   width: 18px;
   height: 18px;
-  vertical-align: middle;
-  margin-left: 3px;
-  margin-right: 3px; }
+  vertical-align: middle; }
 
 .equipment_title {
   display: inline-block;
@@ -1174,6 +1208,9 @@ body,
 @media (min-width: 1366px) {
   .rooms_header_title_block .rooms_header_title {
     margin-bottom: 0; }
+  .rooms_wrapper {
+    max-width: 1170px;
+    margin: 0 auto; }
   .rooms_header {
     display: flex;
     justify-content: space-between;
@@ -1189,22 +1226,32 @@ body,
   .rooms_body {
     display: flex; }
   .rooms_body_filter {
+    padding-left: 0px;
     box-shadow: none;
     background-color: transparent;
     position: static;
     transform: translateX(0); }
   .rooms_body_wrapper {
-    flex-basis: 80%; }
+    flex-basis: 75%; }
     .rooms_body_wrapper .rooms {
       max-width: 270px; }
   .fil_title_first {
     margin-top: 0; }
-  .btn_rooms_sort_push, .rooms_header_btn .rooms_btn_filter, .clouse_btn {
+  .btn_rooms_sort_push,
+  .rooms_header_btn .rooms_btn_filter,
+  .clouse_btn {
     display: none; }
   .btn_custom_rooms {
     max-width: 185px;
     padding-right: 20px;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .rooms .rooms_conteiner {
+    padding: 25px 15px; }
+  .rooms_size_price,
+  .rooms_size_price:nth-child(4) {
+    margin-bottom: 10px; }
+  .rooms .rooms_conteiner .room_title_js {
+    margin-bottom: 15px; } }
 
 .pop-up_wrapper {
   padding-top: 70px;

@@ -1,14 +1,73 @@
+
 const roomConteiner = document.querySelector("#rooms_body_conteiner");
 const roomsFilterBtnConteiner = document.querySelector(
   ".rooms_body_filter_btn_conteiner"
 );
 
-fetch("./json/rooms.json")
-  .then((res) => res.json())
-  .then((data) => {
-    let roomsArray = data;
-    getInfo(roomsArray);
+(async () => {
+  let url = "../json/rooms.json";
+  let response = await fetch(url);
+  let data = response
+    .json()
+    .then((data) => {
+      let roomsArray = data;
+      getInfo(roomsArray);
+    })
+    .then(() => {
+      const btnPopUp = document.querySelectorAll('.btn_pop-up');
+      btnPopUp.forEach(btn => {
+        // function click and open pop-up
+      });
+    }) 
+    // .then(() => {
+    //   const images = document.querySelectorAll(".equipment_img");
+    //   images.forEach((img) => {
+    //     img.addEventListener("mouseover", function (e) {
+    //       const target = e.target;
+    //       const name = target.attributes.equipment.value;
+    //       const parentImg = target.parentElement;
+    //       const divTooltip = document.createElement("div");
+    //       const span = document.createElement("span");
+    //       divTooltip.textContent = name;
+    //       divTooltip.classList.add("equipment_content");
+    //       divTooltip.append(span);
+    //       parentImg.append(divTooltip);
+    //       const numY = 60;
+    //       // const X = e.clientX;
+    //       // const Y = e.clientY;
+    //       // divTooltip.style.left = (X - 30) + 'px';
+    //       // divTooltip.style.top = (Y - numY) + 'px';
+    //     });
+    //     img.addEventListener("mouseout", function (e) {
+    //       const parent = e.target.parentElement;
+    //       // parent.querySelector('.equipment_content').remove();
+    //     });
+    //   });
+    // });
+})();
+
+const createEquipmentImg = (arg1, nameEquipment) => {
+  const roomEquipmentImg = document.querySelectorAll(".room_equipment_img");
+  let div = document.createElement("div");
+  let imgCreate = document.createElement("img");
+  div.append(imgCreate);
+  div.classList.add("equipment_img_div");
+  imgCreate.classList.add("equipment_img");
+  imgCreate.setAttribute("equipment", nameEquipment);
+  imgCreate.src = `${arg1}`;
+
+  // Добивили див в нем спан для отображения tooltip //
+  const divTooltip = document.createElement("div");
+  const span = document.createElement("span");
+  divTooltip.textContent = nameEquipment;
+  divTooltip.classList.add("equipment_content");
+  divTooltip.append(span);
+  div.append(divTooltip);
+
+  roomEquipmentImg.forEach((room) => {
+    room.append(div);
   });
+};
 
 const createRooms = (
   price,
@@ -20,7 +79,8 @@ const createRooms = (
   sizes,
   equipmentsList
 ) => {
-  roomConteiner.innerHTML += ` <div class="rooms" data-price="${price}" data-area="${area}">
+  roomConteiner.innerHTML += 
+      ` <div class="rooms" data-price="${price}" data-area="${area}">
            <picture>
                <source media="(min-width: 1366px)" srcset="${img1366}" type="image/jpeg">
                <source media="(min-width: 768px)" srcset="${img768}" type="image/jpeg">
@@ -34,26 +94,16 @@ const createRooms = (
               <div class="rooms_size_price room_equipment_img">
                 <span class="price_ep room_fil_js equipment_title">Оснащение номера</span>
               </div>
-              <span class="rooms_size_price price_ep room_fil_js">Цена за сутки: ${price}₽</span>
+              <span class="rooms_size_price price_ep room_fil_js">Цена за сутки: <span class="room_price">${price}₽</span> </span>
               <button class="default_button button_col btn_pop-up" type="button">Забронировать</button>
            </div>
         </div>
       `;
-
-  const createEquipmentImg = (arg1) => {
-    const roomEquipmentImg = document.querySelectorAll(".room_equipment_img");
-    let imgCreate = document.createElement("img");
-    imgCreate.classList.add("equipment_img");
-    imgCreate.src = `${arg1}`;
-    roomEquipmentImg.forEach((room) => {
-      room.append(imgCreate);
-    });
-  };
-  if (equipmentsList) {
-    for (const elem of equipmentsList) {
-      let elemImg = Object.values(elem)[0];
-      createEquipmentImg(elemImg);
-    }
+  // if (equipmentsList) {} // Раньше стояло условие если true, только тогда делать перебор.
+  for (const elem of equipmentsList) {
+    let name = Object.keys(elem)[0];
+    let elemImg = Object.values(elem)[0];
+    createEquipmentImg(elemImg, name);
   }
 };
 
