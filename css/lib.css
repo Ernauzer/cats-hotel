@@ -995,7 +995,7 @@ body,
     border: 1px solid #FAC663;
     border-radius: 4px;
     position: absolute;
-    top: -36px;
+    top: calc(100% + 18px);
     left: 0;
     z-index: 10; }
     .equipment_img_div .equipment_content span {
@@ -1003,7 +1003,7 @@ body,
       width: 16px;
       height: 10px;
       position: absolute;
-      top: calc(100% - 2px);
+      top: calc(100% - 1px);
       background-image: url(../img/decoration/vector.svg);
       background-repeat: no-repeat; }
 
